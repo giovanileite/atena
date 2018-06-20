@@ -1,0 +1,20 @@
+/* HEADER */
+.navbar-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+.navbar-link {
+    float: left;
+}
+.navbar-link a {
+    display: block;
+    padding: 8px;
+}
+
+.right-side {
+    float:right
+}
+/* FIM HEADER */
