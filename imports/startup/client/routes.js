@@ -11,6 +11,8 @@ import Loadmang from '../../ui/helper/loadmang';
 import HEADER from '../../ui/layouts/Header';
 
 const Dashboard = Loadmang(() => import('../../ui/components/dashboard/Dashboard'));
+const Clientes = Loadmang(() => import('../../ui/components/clientes/Index'));
+const NovoCliente = Loadmang(() => import('../../ui/components/clientes/novo'));
 const NotFoundPage = Loadmang(() => import('../../ui/components/notfound/NotFoundPage'));
 
 const browserHistory = createBrowserHistory();
@@ -20,6 +22,8 @@ const Routes = () => (
             <HEADER/>
             <Switch>
                 <Route path="/dashboard" component={Dashboard} />
+                <Route exact path="/clientes" component={Clientes} />
+                <Route path="/clientes/criar" component={NovoCliente} />
                 <Route component={NotFoundPage}/>
             </Switch>
         </div>
